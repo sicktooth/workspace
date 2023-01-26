@@ -27,11 +27,25 @@
         <td></td>
         <td></td>
     </tr>
-    <svg width="1000" height="300">
-<react height="150" width="150" fill="orange">
-<animate attributeName="x" from="0" to="300" duration="10s" fill="freeze" repeatCount="indefinite"/>
-</react>
+    </table>
+    <svg height="550" width="550">
+        <path d="M0 0 L0 100 L100 100 L100 Z" />
     </svg>
-</table>
+    <svg width="1000" height="300">
+<rect height="150" width="150" fill="orange">
+<animate attributeName="x" from="0" to="500" dur="1s" fill="remove" repeatCount="indefinite"/>
+</rect>
+    </svg>
+    <svg width="500" height="500">
+<path D="M 0 0 L200 200 L200 0 Z" style="stroke: black; fill: none;" />
+    </svg>
+    <canvas width="500" height="400" id="canvas1">
+    </canvas>
+    <script>
+        var canvas=document.getElementById("canvas1");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle ="rgba(0, 200, 0, 1)";
+        ctx.fillRect(36,10,22,22);
+    </script>
 </body>
 </html>
