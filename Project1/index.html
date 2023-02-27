@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+    <head>
+        <title>About Samuel</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="Sammy.css" type="text/css">
+        <!-- Add Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<!--the Carousel links were gotten from Chatgpt-->
+<!-- Add Slick Carousel JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <img src="photo_2023-02-27_00-00-43.jpg" height="100" width="100" alt="me" class="me">
+        </header>
+        <div id="about">
+            <!--using CSS to make it look like blockquote for all div tags-->
+        <h4>Quick history about me</h4>
+        <p>
+            Hello Reader, my names are Osaronungwe, Samuel Ogboru<br>My Skills are: <br>
+        <ul class="skills">
+            <li>Html</li>
+            <li>CSS</li>
+            <li>Market Analysis(USD/CAD & GBP/USD)</li>
+            <li>2d AutoCAD drawings</li>
+        </ul>
+        for now.<br>I was born and raised in Nigeria, what kept me going was that I knew it was possible to be anybody you wish and I'm not talking about gender based tho also all the pain i felt knowing that; <q>Emotion is a Drive.</q><br>
+        Most of my knowledge about web development came from Sololearn.. my qualifications are as shown below:
+    </p>
+    </div>
+    <div id="slider">
+        <img src="photo_1_2023-02-27_00-41-33.jpg" alt="coding for marketers">
+        <img src="photo_2_2023-02-27_00-41-33.jpg" alt="CSS">
+        <img src="photo_3_2023-02-27_00-41-33.jpg" alt="HTML">
+        <img src="photo_4_2023-02-27_00-41-33.jpg" alt="Web Development Fundamentals">
+      </div>
+    <div id="offers">
+        <h4>What I offer</h4>
+        <p>
+            I offer a few services for now which are listed below;<br>
+            <ul class="services">
+                <li>A single page webpage with a little touch of style</li>
+                <li>Market analysis on the listed Markets above</li>
+                <li>Basic 2d AutoCAD drawing of your choice</li>
+            </ul>
+        </p>
+    </div>
+    <footer>
+        <h2>Contact me</h2>
+        <p>Feel free to contact me</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100023448035721&mibextid=ZbWKwL" target="_blank">Facebook<i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sammy_Brown0?t=sjqzM6oWqUaO6hyPWOePdw&s=09" target="_blank">Twitter<i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/sammy_brown0?igshid=ZDdkNTZiNTM=" target="_blank">Instagram<i class="fab fa-instagram"></i></a>
+          </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+  $('#slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
+    </script>
+    </body>
+</html>

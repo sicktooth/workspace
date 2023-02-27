@@ -1,0 +1,43 @@
+html {
+margin: 1px;
+color: darkgreen;
+}
+body {
+    background-image: url("download.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }  
+  #header{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url("photo_2023-02-27_00-00-43.jpg");
+  }
+  .me {
+    border-radius: 50%;
+  }
+    div {
+        margin: 10px;
+        box-shadow: 0 0 1px rgb(0, 0, 0);
+        background: aqua;
+        padding: 15px;
+    }
+  footer {
+    background-color: black;
+  }
+.social-icons {
+    display: flex;
+    align-items: center;
+    background: black;
+    justify-content: center;
+  }
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  .social-icons a:hover {
+    color: #007bff;
+  }  
