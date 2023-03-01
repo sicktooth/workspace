@@ -1,24 +1,30 @@
-body {
-    background-color: aqua;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    font-family: 'Courier New', Courier, monospace;
-  }  
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+}
+.container {
+ margin: 20px auto 0 auto;
+ width: 1140px;
+}
+.main {
+  justify-content: center;
+  padding-left: 20px;
+  float: left;
+  width: 90%;
+}
+.main-post {
+ text-align: center;
+}
   h4, h2 {
     font-weight: bolder;
+    margin: 10px 0 10px 0;
   }
   #header{
     display: flex;
-    align-content: center;
     justify-content: center;
-    background-color: beige;
-    margin: 5px;
-  }
-  div {
-    margin: 5px;
-    text-align: center;
-    padding: 5px;
+    margin-bottom: 15px;
   }
   .skills li {
     font-weight: 300;
@@ -27,21 +33,24 @@ body {
     border-radius: 50%;
   }
     #about {
-      background-color: beige;
        font-weight: 300;
     }
-    #offers {
-      background-color: beige;
+    .mean {
+      float: left;
+      width: 10%;
+    }
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
     }
   footer {
-    background-color: black;
-    margin: 5px;
-    color: beige;
+    padding-top: 5px;
+    border-top: 2px solid #333;
   }
 .social-icons {
     display: flex;
     align-items: center;
-    background: black;
     justify-content: center;
   }
   .social-icons a {
