@@ -30,6 +30,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 300;
   font-size:150% ;
+  margin-bottom: 10px;
 }
 
 .h-container {
@@ -39,15 +40,15 @@ h1 {
 }
 
 nav {
-  float: right;
-  margin-top: 3%;
-  margin-right: 5%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
 }
 
 nav ul li{
   display: inline-block;
   color:beige;
-  margin-left: 30px;
+  margin: 1% 0 1.5% 20%;
 }
 
 nav ul li:link,
@@ -66,4 +67,13 @@ nav ul li a {
   text-decoration: none;
   color: beige;
   font-size: larger;
+}
+.btn-full{
+  background-color: rgba(202, 41, 41,0.5);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+  border: rgba(202, 41, 41,0.5);
+  position: absolute;
+  left: 25%;
 }
