@@ -10,6 +10,7 @@
 html {
   font-family: 'Courier New', Courier, monospace;
   color: beige;
+  font-size: 22px;
 }
 
 /*
@@ -25,21 +26,40 @@ header {
   background-position: center;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size:150% ;
+}
+
 .h-container {
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 30%;
 }
 
 nav {
   float: right;
   margin-top: 3%;
+  margin-right: 5%;
 }
 
 nav ul li{
   display: inline-block;
   color:beige;
-  padding-left: 30px;
+  margin-left: 30px;
+}
+
+nav ul li:link,
+nav ul li:visited{
+  color:beige;
+  transition: border-bottom 0.5s;
+  border-bottom: 2px solid transparent;
+}
+nav ul li:hover,
+nav ul li:active{
+  color:rgb(202, 41, 41);
+  border-bottom: 2px solid rgb(202, 41, 41);
 }
 
 nav ul li a {
