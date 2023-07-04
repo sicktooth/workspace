@@ -1,5 +1,0 @@
-Project 1.1
-
-Creating a slider on the webpage that slides unlimited with modern images of nuclear power and hydro power
-
-Creating reviews by investors with their respective pictures and names
