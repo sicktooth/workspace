@@ -78,18 +78,21 @@ nav li a {
 }
 
 section {
-    padding: 30px;
+    padding:0 30px 0 30px;
 }
 
 .about-us__header {
-    margin-bottom: 10px;
     padding: 30px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     line-height: 40px;
 }
-.about-us__header__heading::after {
+
+
+/*   ---------------- SETUP FOR H2 ELEMENTS ---------------- */
+.about-us__header__heading::after,
+.popular-meals__header::after {
     content: "";
     width: 100px;
     height: 3px;
@@ -97,10 +100,31 @@ section {
     display: block;
     margin: 20px 0;
 }
+/*----------------------------------------------------------------*/
+
+
 .about-us__text {
     padding: 30px;
 }
 .about-us__features {
     display: flex;
     flex-direction: row;
+    padding: 30px;
+}
+.about-us__features__header1,
+.about-us__features__header2,
+.about-us__features__header3,
+.about-us__features__header4 {
+    display: flex;
+    justify-content: center;
+}
+.about-us__features__1,
+.about-us__features__2,
+.about-us__features__3,
+.about-us__features__4 {
+    padding: 20px;
+}
+
+#popular-meals {
+    background-color: #c4bbbb;
 }
