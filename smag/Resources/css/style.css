@@ -61,8 +61,8 @@ nav li a {
 }
 .header__box__btn a:hover,
 .header__box__btn a:active{
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #c8362e;
+    background-color: #ad160e;
+    color: #dadada;
 }
 .btn:link, 
 .btn:visited {
@@ -75,4 +75,32 @@ nav li a {
     padding: 10px;
     font-weight: bold;
     background-color: #c8362e;
+}
+
+section {
+    padding: 30px;
+}
+
+.about-us__header {
+    margin-bottom: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+}
+.about-us__header__heading::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color:  #c8362e;
+    display: block;
+    margin: 20px 0;
+}
+.about-us__text {
+    padding: 30px;
+}
+.about-us__features {
+    display: flex;
+    flex-direction: row;
 }
