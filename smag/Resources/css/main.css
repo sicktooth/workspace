@@ -100,13 +100,14 @@ section {
     height: 3px;
     background-color:  #c8362e;
     display: block;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
 }
 /*----------------------------------------------------------------*/
 
 
 .about-us__text {
-    padding: 30px;
+    padding: 50px;
+    font-size: 120%;
 }
 .about-us__features {
     display: flex;
@@ -130,7 +131,6 @@ section {
 #popular-meals {
     background-color: #c4bbbb;
     padding: 0 200px 30px 200px;
-    overflow: hidden;
 }
 .popular-meals__header {
     padding: 30px;
@@ -141,8 +141,8 @@ figure img {
     height: auto;
     display: block;
     transform: scale(1.15);
-    opacity: 0.7;
-    transition: all 1s;
+    opacity: 0.65;
+    transition: all 0.5s;
 }
 figure img:hover {
     opacity: 1;
@@ -151,4 +151,13 @@ figure img:hover {
 .popular-meals__maels {
     list-style: none;
     display: flex;
+}
+.popular-meals__maels li {
+    overflow: hidden
+}
+.popular-meals__meals-1 {
+    display: flex;
+}
+.popular-meals__meals-1 li {
+    overflow: hidden;
 }
