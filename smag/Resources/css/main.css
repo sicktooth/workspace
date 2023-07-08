@@ -18,7 +18,7 @@ html {
 
 }
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0 , 0, 0, 0.56)), url(img/hero.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0 , 0, 0, 0.38)), url(img/hero.webp);
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -36,24 +36,66 @@ header {
     font-weight: 200;
     text-transform: uppercase;
 }
-/*
 nav {
-    margin: 20px 30px 0 0;
-    float: right;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 30px 0 20px 0;
 }
-nav li {
+.center__nav li,
+.nav__right div{
     display: inline-block;
-    list-style: none;
-    margin-left: 18px;
-    text-transform:uppercase;
-    font-size: 20px;
 }
-nav li a {
+.center__nav {margin-top: 30px;}
+.nav__right {margin-top: 10px;}
+.nav__left {margin-top: 5px;}
+.center__nav li a:link,
+.center__nav li a:visited {
     text-decoration: none;
-    color: #fff;
+    color: #000;
+    font-size: 90%;
+    transition: all 0.4s;
 }
-*/
+.center__nav li a:hover,
+.center__nav li a:active {
+    color: #c8362e;
+}
+.center__nav li {
+    margin-left: 18px;
+}
 
+.nav__right div {
+    margin-left: 15px;
+    font-weight: 500;
+}
+.nav__right div a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    border: 2px solid #c8362e;
+    color: #fff;
+    transition: all 0.4s;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #c8362e;
+}
+.btn-full:hover,
+.btn-full:active {
+    background-color: #ad160e;
+    color: #dadada;
+}
+.btn-ghost:link,
+.btn-ghost:active {
+    color: #000;
+    transition: all 0.4s;
+}
+.btn-ghost:hover,
+.btn-ghost:visited {
+    color: #c8362e;
+}
 .header__box__btn {
     margin-top: 280px;
     position: absolute;
@@ -71,7 +113,7 @@ nav li a {
     border: 2px solid #c8362e;
     text-decoration: none;
     color: #fff;
-    transition: color 0.4s, background-color 0.4s;
+    transition: all 0.4s;
     border-radius: 20px;
     font-size: 150%;
     padding: 10px;
@@ -83,18 +125,13 @@ section {
     padding:0 30px 0 30px;
 }
 
-.about-us__header {
-    padding: 30px;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
-    line-height: 40px;
-}
+
 
 
 /*   ---------------- SETUP FOR H2 ELEMENTS ---------------- */
 .about-us__header__heading::after,
-.popular-meals__header::after {
+.popular-meals__header::after,
+.how-it-works__header::after{
     content: "";
     width: 100px;
     height: 3px;
@@ -105,9 +142,28 @@ section {
 /*----------------------------------------------------------------*/
 
 
+.how-it-works__header,
+.about-us__header {padding: 30px;}
+
+.how-it-works__steps {
+    display: flex;
+    justify-content: center;
+}
+.how-it-works__steps div {padding: 30px;}
+.how-it-works__steps__btn {margin: 13px 0 25px 0;}
+.how-it-works__steps__btn a {text-decoration: none;}
+
+#about-us {
+    background-color: #c4bbbb;   
+}
+.about-us__header {
+    padding: 30px;
+}
+
 .about-us__text {
     padding: 50px;
     font-size: 120%;
+    line-height: 40px;
 }
 .about-us__features {
     display: flex;
@@ -129,7 +185,6 @@ section {
 }
 
 #popular-meals {
-    background-color: #c4bbbb;
     padding: 0 200px 30px 200px;
 }
 .popular-meals__header {
