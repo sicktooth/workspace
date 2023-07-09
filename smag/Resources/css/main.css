@@ -129,6 +129,7 @@ section {
 
 
 /*   ---------------- SETUP FOR H2 ELEMENTS ---------------- */
+/*
 .about-us__header__heading::after,
 .popular-meals__header::after,
 .how-it-works__header::after{
@@ -139,6 +140,7 @@ section {
     display: block;
     margin: 20px 0 0 0;
 }
+*/
 /*----------------------------------------------------------------*/
 
 
@@ -215,4 +217,15 @@ figure img:hover {
 }
 .popular-meals__meals-1 li {
     overflow: hidden;
+}
+
+#our-cities { background-color: #c4bbbb ;}
+.our-cities__cities {
+    display: flex;
+    justify-content: space-around;
+/*    margin: 25px 0 0 0;*/
+}
+.our-cities__header {
+    margin-bottom: 20px;
+    padding: 30px;
 }
