@@ -25,40 +25,63 @@ header {
     background-position: center;
 }
 .header__box {
-     color: #fff;
-     position: absolute; 
-     top: 40%; 
-     left: 50%; 
-     transform: translate(-50%, -50%); 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .header__box__text {
-    font-size: 20px;
-    font-weight: 200;
+    padding: 140px;
+}
+.header__box__text h1 {
+    font-size: 300%;
+    font-weight: 400;
     text-transform: uppercase;
+    padding: 0 200px;
+}
+h1::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color:  #c8362e;
+    display: block;
+    margin: 20px 0 0 0;
+}
+.header__box__text p {
+    margin-top: 70px;
+    padding: 0 200px;
 }
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #fff;
-    padding: 30px 0 20px 0;
+    background-color: rgba(255, 255, 255);
+    padding: 15px 0 5px 0;
+}
+.nav__left img {
+    height: 70px;
+    width: 70px;
 }
 .center__nav li,
 .nav__right div{
     display: inline-block;
 }
-.center__nav {margin-top: 30px;}
-.nav__right {margin-top: 10px;}
+.center__nav {
+    margin-top: 50px;
+}
+.nav__right {margin-top: 35px;}
 .nav__left {margin-top: 5px;}
 .center__nav li a:link,
 .center__nav li a:visited {
     text-decoration: none;
     color: #000;
-    font-size: 90%;
+    font-size: 95%;
     transition: all 0.4s;
 }
-.center__nav li a:hover,
-.center__nav li a:active {
+.center__nav li a:hover {
     color: #c8362e;
+}
+.center__nav li a:active {
+    color: #dadada;
 }
 .center__nav li {
     margin-left: 18px;
@@ -71,6 +94,7 @@ nav {
 .nav__right div a {
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 90%;
 }
 
 .btn-full:link,
@@ -88,20 +112,18 @@ nav {
     color: #dadada;
 }
 .btn-ghost:link,
-.btn-ghost:active {
-    color: #000;
+.btn-ghost:visited {
+    color: #000000;
     transition: all 0.4s;
 }
-.btn-ghost:hover,
-.btn-ghost:visited {
+.btn-ghost:hover {
     color: #c8362e;
 }
+.btn-ghost:active {
+    color: #dadada;
+}
 .header__box__btn {
-    margin-top: 280px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin-top: 70px;
 }
 .header__box__btn a:hover,
 .header__box__btn a:active{
@@ -121,27 +143,14 @@ nav {
     background-color: #c8362e;
 }
 
+
+
+
 section {
     padding:0 30px 0 30px;
 }
 
 
-
-
-/*   ---------------- SETUP FOR H2 ELEMENTS ---------------- */
-/*
-.about-us__header__heading::after,
-.popular-meals__header::after,
-.how-it-works__header::after{
-    content: "";
-    width: 100px;
-    height: 3px;
-    background-color:  #c8362e;
-    display: block;
-    margin: 20px 0 0 0;
-}
-*/
-/*----------------------------------------------------------------*/
 
 
 .how-it-works__header,
@@ -155,17 +164,13 @@ section {
 .how-it-works__steps__btn {margin: 13px 0 25px 0;}
 .how-it-works__steps__btn a {text-decoration: none;}
 
+/*
 #about-us {
     background-color: #c4bbbb;   
 }
+*/
 .about-us__header {
     padding: 30px;
-}
-
-.about-us__text {
-    padding: 50px;
-    font-size: 120%;
-    line-height: 40px;
 }
 .about-us__features {
     display: flex;
@@ -205,11 +210,11 @@ figure img:hover {
     opacity: 1;
     transform: scale(1.35);
 }
-.popular-meals__maels {
+.popular-meals__meals {
     list-style: none;
     display: flex;
 }
-.popular-meals__maels li {
+.popular-meals__meals li {
     overflow: hidden
 }
 .popular-meals__meals-1 {
@@ -219,13 +224,48 @@ figure img:hover {
     overflow: hidden;
 }
 
-#our-cities { background-color: #c4bbbb ;}
+
 .our-cities__cities {
     display: flex;
     justify-content: space-around;
-/*    margin: 25px 0 0 0;*/
 }
 .our-cities__header {
     margin-bottom: 20px;
     padding: 30px;
+}
+.our-cities__cities__ph img,
+.our-cities__cities__lag img,
+.our-cities__cities__benin img,
+.our-cities__cities__abuja img {
+    height: 180px;
+    width: 240px;
+    margin-bottom: 10px;
+}
+.our-cities__cities__ph__text div,
+.our-cities__cities__lag__text div,
+.our-cities__cities__benin__text div,
+.our-cities__cities__abuja__text div {
+    margin: 5px;
+}
+.our-cities__cities__ph__text div a:link, 
+.our-cities__cities__ph__text div a:visited, 
+.our-cities__cities__lag__text div a:link, 
+.our-cities__cities__lag__text div a:visited, 
+.our-cities__cities__benin__text div a:link, 
+.our-cities__cities__benin__text div a:visited, 
+.our-cities__cities__abuja__text div a:link,
+.our-cities__cities__abuja__text div a:visited {
+    text-decoration: underline;
+    color: #000;
+    transition: all 0.4s;
+}
+.our-cities__cities__ph__text div a:hover, 
+.our-cities__cities__ph__text div a:active, 
+.our-cities__cities__lag__text div a:hover, 
+.our-cities__cities__lag__text div a:active, 
+.our-cities__cities__benin__text div a:hover, 
+.our-cities__cities__benin__text div a:active, 
+.our-cities__cities__abuja__text div a:hover,
+.our-cities__cities__abuja__text div a:active {
+    color: #c8362e;
 }
