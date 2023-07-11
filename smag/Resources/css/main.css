@@ -61,7 +61,7 @@ nav {
     height: 70px;
     width: 70px;
 }
-.center__nav li,
+.center__nav,
 .nav__right div{
     display: inline-block;
 }
@@ -70,20 +70,20 @@ nav {
 }
 .nav__right {margin-top: 35px;}
 .nav__left {margin-top: 5px;}
-.center__nav li a:link,
-.center__nav li a:visited {
+.center__nav a:link,
+.center__nav a:visited {
     text-decoration: none;
     color: #000;
     font-size: 95%;
     transition: all 0.4s;
 }
-.center__nav li a:hover {
+.center__nav a:hover {
     color: #c8362e;
 }
-.center__nav li a:active {
+.center__nav a:active {
     color: #dadada;
 }
-.center__nav li {
+.center__nav a {
     margin-left: 18px;
 }
 
@@ -154,14 +154,20 @@ section {
 
 
 .how-it-works__header,
-.about-us__header {padding: 30px;}
+.about-us__header {
+    padding: 30px;
+    text-align: center;
+}
 
 .how-it-works__steps {
     display: flex;
     justify-content: center;
 }
 .how-it-works__steps div {padding: 30px;}
-.how-it-works__steps__btn {margin: 13px 0 25px 0;}
+.how-it-works__steps__btn {
+    margin: 13px 0 25px 0;
+    text-align: center;
+}
 .how-it-works__steps__btn a {text-decoration: none;}
 
 /*
@@ -197,6 +203,7 @@ section {
 .popular-meals__header {
     padding: 30px;
     margin-bottom: 20px;
+    text-align: center;
 }
 figure img {
     width: 100%;
@@ -268,4 +275,52 @@ figure img:hover {
 .our-cities__cities__abuja__text div a:hover,
 .our-cities__cities__abuja__text div a:active {
     color: #c8362e;
+}
+
+#plans {
+    padding-bottom: 30px;
+}
+.plans__header {
+    padding: 30px;
+    text-align: center;
+}
+.plans__prices {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.plans__prices__premium, 
+.plans__prices__vip {
+    border-right: 1px solid #aaa7a7;
+    padding: 0 80px 0 0;
+}
+.plans__prices__premium__body,
+.plans__prices__vip__body {
+    padding: 30px;
+}
+.plans__prices__starter__body {
+    padding: 40px 30px 49px 30px;
+}
+.plans__prices__premium div a, 
+.plans__prices__vip div a,
+.plans__prices__starter div a {
+    text-decoration: none;
+}
+.starter__header__text {font-size: 18px;}
+.plan__prices__premium__header div,
+.plan__prices__vip__header div,
+.plan__prices__starter__header div {
+    font-size: 200%;
+    font-weight: bolder;
+    font-style: italic;
+    border-bottom: 1px dotted #aaa7a7;
+    padding: 20px;
+}
+.plan__prices__premium__header div p,
+.plan__prices__vip__header div p {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
 }
