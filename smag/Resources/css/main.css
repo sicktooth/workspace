@@ -340,6 +340,12 @@ blockquote div {
 blockquote div p {
     margin-top: 15px;
 }
+.esp {
+    font-size: 270%;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
 .testimonials__content {
     display: flex;
 }
