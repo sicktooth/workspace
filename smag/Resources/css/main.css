@@ -15,7 +15,7 @@ html {
     font-size: 18px;
     color: #141414;
     font-family: cursive;
-
+/*    overflow: hidden;*/
 }
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0 , 0, 0, 0.38)), url(img/hero.webp);
@@ -49,7 +49,7 @@ h1::after{
 }
 .header__box__text p {
     margin-top: 70px;
-    padding: 0 200px;
+    padding: 0 250px;
 }
 nav {
     display: flex;
@@ -98,13 +98,15 @@ nav {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     border: 2px solid #c8362e;
     color: #fff;
     transition: all 0.4s;
     border-radius: 20px;
     padding: 10px;
     background-color: #c8362e;
+    text-transform: uppercase;
 }
 .btn-full:hover,
 .btn-full:active {
@@ -137,19 +139,23 @@ nav {
     color: #fff;
     transition: all 0.4s;
     border-radius: 20px;
-    font-size: 150%;
+    font-size: 130%;
     padding: 10px;
     font-weight: bold;
     background-color: #c8362e;
+    text-transform: uppercase;
 }
 
 
 
 
 section {
-    padding:0 30px 0 30px;
+    padding:0 30px 30px 30px;
 }
-
+h2 {
+    font-weight: 500;
+    font-size: 190%;
+}
 
 
 
@@ -170,35 +176,9 @@ section {
 }
 .how-it-works__steps__btn a {text-decoration: none;}
 
-/*
-#about-us {
-    background-color: #c4bbbb;   
-}
-*/
-.about-us__header {
-    padding: 30px;
-}
-.about-us__features {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-}
-.about-us__features__header1,
-.about-us__features__header2,
-.about-us__features__header3,
-.about-us__features__header4 {
-    display: flex;
-    justify-content: center;
-}
-.about-us__features__1,
-.about-us__features__2,
-.about-us__features__3,
-.about-us__features__4 {
-    padding: 20px;
-}
 
 #popular-meals {
-    padding: 0 200px 30px 200px;
+    padding: 0 200px 0 200px;
 }
 .popular-meals__header {
     padding: 30px;
@@ -235,10 +215,12 @@ figure img:hover {
 .our-cities__cities {
     display: flex;
     justify-content: space-around;
+    padding: 0 0 20px 0;
 }
 .our-cities__header {
     margin-bottom: 20px;
     padding: 30px;
+    text-align: center;
 }
 .our-cities__cities__ph img,
 .our-cities__cities__lag img,
@@ -279,6 +261,11 @@ figure img:hover {
 
 #plans {
     padding-bottom: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0 , 0, 0, 0.38)), url(img/back-plans.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
 }
 .plans__header {
     padding: 30px;
@@ -310,7 +297,7 @@ figure img:hover {
 .plan__prices__premium__header div,
 .plan__prices__vip__header div,
 .plan__prices__starter__header div {
-    font-size: 200%;
+    font-size: 160%;
     font-weight: bolder;
     font-style: italic;
     border-bottom: 1px dotted #aaa7a7;
@@ -323,4 +310,144 @@ figure img:hover {
     font-style: normal;
     display: flex;
     justify-content: center;
+}
+
+#testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0 , 0, 0, 0.2)), url(img/back-customers.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+.testimonials__header {
+    padding: 30px;
+    text-align: center;
+}
+blockquote {
+    padding: 20px 55px;
+}
+blockquote img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+blockquote div {
+    display: flex;
+    align-content: center;
+    padding: 10px;
+}
+blockquote div p {
+    margin-top: 15px;
+}
+.testimonials__content {
+    display: flex;
+}
+
+#sign-up {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0 , 0, 0, 0.2)), url(img/back-customers.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+.sign-up__header {
+    padding: 30px;
+}
+.sign-up__header h2::after {
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color:  #c8362e;
+    display: block;
+    margin: 20px 0 0 0;
+}
+.sign-up__header p {
+    padding: 10px 400px;
+}
+.sign-up__form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: serif;
+}
+form {
+    width: 30%;
+}
+form div {
+    margin-bottom: 5px;
+}
+::placeholder {
+    padding:0 0 0 3px;
+    color: #000;
+}
+input[submit] {
+    color: #000;
+}
+input[type=email],
+input[type=password] {
+/*    color: #fff;*/
+    background-color: rgba(244, 244, 244, 0.71);
+    margin: 5px 0;
+    height: 2pc;
+    width: 100%;
+    border-color: rgba(244, 244, 244, 0.71);
+}
+label {margin-right: 10px;}
+input[type=submit]{
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #ad160e;
+    color: #dadada;
+}
+input[type=submit]:active {
+    color: #ffffff;
+    background-color: #c8362e;
+}
+
+
+/*
+#about-us {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0 , 0, 0, 0.38)), url(img/back-customers.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;  
+}
+*/
+.about-us__header {
+    padding: 30px;
+}
+.about-us__header h2::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color:  #c8362e;
+    display: block;
+    margin: 20px 0 0 0;
+}
+.about-us__features {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.about-us__feature__1,
+.about-us__feature__2,
+.about-us__feature__3,
+.about-us__feature__4 {
+    padding: 0 90px;
+}
+.about-us__features__header1,
+.about-us__features__header2,
+.about-us__features__header3,
+.about-us__features__header4 {
+    display: flex;
+    justify-content: center;
+}
+.about-us__features__1,
+.about-us__features__2,
+.about-us__features__3
+/*.about-us__features__4 */
+{
+    padding: 20px 70px;
 }
