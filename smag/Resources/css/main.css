@@ -462,8 +462,7 @@ input[type=submit]:active {
     padding: 0 0 8px 0;
 }
 .ig-photos__header {
-    background-image: linear-gradient(rgba(20,5,21,0.5), rgba(222,222,222,0.5));
-/*        url();*/
+    background-image: linear-gradient(to right, rgb(200, 54, 46) 45%, rgb(254, 218, 117), rgb(250, 126, 30), rgb(150, 49, 191));
     background-size: cover;
     margin-bottom: 10px;
     text-align: center;
@@ -494,15 +493,17 @@ footer {
     padding: 0;
     margin: 0;
 }
-.footer__right img {
+.footer__right {
     width: 50vw;
     height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)), url(img/footer-right.webp);
 }
 .footer__left {
     width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-image: url(img/footer-left.webp);
 }
 .footer__left div{
    padding: 10px;
@@ -522,5 +523,5 @@ footer {
 }
 .footer__nav a:hover,
 .footer__nav a:active {
-    color: #1f1e1e;
+    color: #6d6d6d;
 }
