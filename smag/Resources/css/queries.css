@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1200px){
+    .header__box__text {
+        padding: 100px;
+    }
+    .header__box__text h1 {
+        padding: 0 150px;
+    }
+    .header__box__text p {
+        margin-top: 60px;
+        padding: 0 200px;
+    }
+    .plans__prices__premium, 
+    .plans__prices__vip,
+    .plans__prices__starter {
+        padding: 0 70px 0 70px;
+    }
+}
