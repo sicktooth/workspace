@@ -164,7 +164,6 @@ h2 {
     padding: 30px;
     text-align: center;
 }
-
 .how-it-works__steps {
     display: flex;
     justify-content: center;
@@ -185,28 +184,26 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
 }
-figure img {
+.popular-meals__meals-1 li figure img,
+.popular-meals__meals li figure img {
     width: 100%;
     height: auto;
     display: block;
-    transform: scale(1.15);
+    transform: scale(1.19);
     opacity: 0.65;
     transition: all 0.5s;
 }
-figure img:hover {
+.popular-meals__meals-1 li figure img:hover,
+.popular-meals__meals li figure img:hover {
     opacity: 1;
     transform: scale(1.35);
 }
-.popular-meals__meals {
+.popular-meals__meals,
+.popular-meals__meals-1{
     list-style: none;
     display: flex;
 }
-.popular-meals__meals li {
-    overflow: hidden
-}
-.popular-meals__meals-1 {
-    display: flex;
-}
+.popular-meals__meals li,
 .popular-meals__meals-1 li {
     overflow: hidden;
 }
@@ -261,7 +258,7 @@ figure img:hover {
 
 #plans {
     padding-bottom: 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0 , 0, 0, 0.38)), url(img/back-plans.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0 , 0, 0, 0.3)), url(img/back-plans.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -300,7 +297,7 @@ figure img:hover {
     font-size: 160%;
     font-weight: bolder;
     font-style: italic;
-    border-bottom: 1px dotted #aaa7a7;
+    border-bottom: 2.5px dotted #aaa7a7;
     padding: 20px;
 }
 .plan__prices__premium__header div p,
@@ -313,7 +310,7 @@ figure img:hover {
 }
 
 #testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0 , 0, 0, 0.2)), url(img/back-customers.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0 , 0, 0, 0.3)), url(img/back-customers.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -351,7 +348,7 @@ blockquote div p {
 }
 
 #sign-up {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0 , 0, 0, 0.2)), url(img/back-customers.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0 , 0, 0, 0.3)), url(img/back-customers.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -456,4 +453,25 @@ input[type=submit]:active {
 /*.about-us__features__4 */
 {
     padding: 20px 70px;
+}
+
+
+.ig-photos__header {
+    background-image: linear-gradient(rgba(20,5,21,0.5), rgba(222,222,222,0.5));
+/*        url();*/
+    background-size: cover;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ig-photos__photos {
+    display: flex;
+    list-style: none;
+}
+.ig-photos__photos li figure img {
+    width: 142px;
+    height: 140px;
+    margin-right: 8px
+}
+li:first-of-type {
+    margin-left: 8px;
 }
