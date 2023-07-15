@@ -166,13 +166,33 @@ h2 {
 .how-it-works__steps {
     display: flex;
     justify-content: center;
+    padding: 0 250px;
 }
-.how-it-works__steps div {padding: 30px;}
+.how-it-works__steps div {padding: 30px 0 40px 0;}
 .how-it-works__steps__btn {
     margin: 13px 0 25px 0;
     text-align: center;
 }
 .how-it-works__steps__btn a {text-decoration: none;}
+.how-it-works__step1 div,
+.how-it-works__step2 div,
+.how-it-works__step3 div{
+    text-align: center;
+}
+.how-it-works__step1 p,
+.how-it-works__step2 p,
+.how-it-works__step3 p{
+    padding: 0 85px;
+    text-align: center;
+}
+ion-icon[name=receipt-outline],
+ion-icon[name=checkmark-outline],
+ion-icon[name=restaurant-outline] {
+    border: 1px solid #c8362e;
+    font-size: 300%;
+    border-radius: 50%;
+    padding: 15px;
+}
 
 
 #popular-meals {
@@ -231,6 +251,18 @@ h2 {
 .our-cities__cities__benin__text div,
 .our-cities__cities__abuja__text div {
     margin: 5px;
+}
+.our-cities__cities__ph__text div ion-icon,
+.our-cities__cities__lag__text div ion-icon,
+.our-cities__cities__benin__text div ion-icon,
+.our-cities__cities__abuja__text div ion-icon {
+    margin-right: 8px;
+}
+ion-icon[name=star] {
+    color: gold;
+}
+ion-icon[name=logo-twitter] {
+    color: #55acee;
 }
 .our-cities__cities__ph__text div a:link, 
 .our-cities__cities__ph__text div a:visited, 
@@ -412,14 +444,7 @@ input[type=submit]:active {
 }
 
 
-/*
-#about-us {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0 , 0, 0, 0.38)), url(img/back-customers.webp);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;  
-}
-*/
+
 .about-us__header {
     padding: 30px;
 }
@@ -436,6 +461,10 @@ input[type=submit]:active {
     flex-direction: row;
     padding: 30px;
 }
+.about-us__features div ion-icon {
+    color: #c8362e;
+    font-size: 300%;
+}
 .about-us__feature__1,
 .about-us__feature__2,
 .about-us__feature__3,
@@ -447,15 +476,13 @@ input[type=submit]:active {
 .about-us__features__header3,
 .about-us__features__header4 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
-.about-us__features__1,
-.about-us__features__2,
-.about-us__features__3
-/*.about-us__features__4 */
-{
-    padding: 20px 70px;
+.about-us__features__text {
+    padding-top: 30px
 }
+
 
 
 #ig-photos {
