@@ -4,32 +4,32 @@
     <title>Smag</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Smag provides the best Nigerian meals at your doorstep which is of course made with love ♥.">
-    <meta name="keywords" content="Nigerian food, delicious meals">
+    <meta name="keywords" content="Nigerian food, delicious meals, popular Nigerian food">
     <link rel="stylesheet" type="text/css" href="Resources/css/main.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="nav__left">
                  <img alt="logo img" src="Resources/css/img/logo-white.png">
             </div>
             <div class="center__nav">
-                <a href="#">Most ordered meals</a>
-                <a href="#">How it works</a>
-                <a href="#">Our Cities</a>
-                <a href="#">About Us</a>
+                <a href="#popular-meals">Most ordered meals</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#our-cities">Our Cities</a>
+                <a href="#about-us">About Us</a>
             </div>
             <div class="nav__right">
-                <div><a href="#" class="btn-ghost">Log in </a></div>
-                <div><a href="#" class="btn-full">Sign Up </a></div>
+                <div><a href="#" target="_self" class="btn-ghost">Log in </a></div>
+                <div><a href="#sign-up" class="btn-full">Sign Up </a></div>
             </div>
         </nav>
         <div class="header__box">
             <div class="header__box__text" align="center"> <h1>get any Nigerian dish at your doorstep.</h1>
             <p>We’re Smag, your premium food delivery service. Since you’re always busy and little or no time for cooking, we’ve got you covered, we promise!
             </p>
-                <div class="header__box__btn"><a class="btn" href="#">Show me how</a></div> 
+                <div class="header__box__btn"><a class="btn" href="#how-it-works">Show me how</a></div> 
             </div> 
         </div>
     </header>
@@ -52,7 +52,7 @@
                 <p>Enjoy your meal after 20 minutes.</p>
             </div>
         </div>
-        <div class="how-it-works__steps__btn" ><a href="#" class="btn-full">Subcribe now</a></div>
+        <div class="how-it-works__steps__btn" ><a href="#plans" class="btn-full">Subcribe now</a></div>
     </section>
     
      <section id="popular-meals">
@@ -292,19 +292,22 @@
     
     <footer>
         <div class="footer__left">
-            <div>09014902159</div>
-            <div>Port-hacourt city</div> 
-<!--
-            <div>
-            
+            <div><ion-icon name="call-outline"></ion-icon>+234 9014902159</div>
+            <div><ion-icon name="location-outline"></ion-icon>Port-hacourt city</div> 
+            <div class="footer__left__socials">
+                <a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="mail"></ion-icon></a>
             </div>
--->
+            <hr width="50%">
             <nav class="footer__nav">
-                <a href="#">Home</a>
-                <a href="#">Sign Up &#38; prices</a>
-                <a href="#">How it works</a>
-                <a href="#">Our Cities</a>
+                <a href="#home">Home</a>
+                <a href="#sign-up">Sign Up &#38; prices</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#our-cities">Our Cities</a>
             </nav>
+            <p>&copy; 2023 Copyright All Rights Reserved</p>
         </div>
         <div class="footer__right">
         </div>
