@@ -11,6 +11,7 @@ html {
     font-size: 18px;
     color: #141414;
     font-family: cursive;
+   overflow-x: hidden;
 }
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0 , 0, 0, 0.38)), url(img/hero.webp);

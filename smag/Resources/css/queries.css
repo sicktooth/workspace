@@ -29,6 +29,18 @@
     .about-us__feature__2 {padding: 0 70px;}
     .ig-photos__photos li figure img {width: 90px; height: 90px; transform: scale(1.25);}
 }
-@media only screen and (max-width: 768px){
-    
+
+@media only screen and (max-width: 1023px){
+    .header__box__text {
+        padding: 70px;
+    }
+    .plans__prices__starter__body {margin-bottom: 24px;}
+    .plans__prices__starter__header p {
+        margin-bottom: 0 20px;
+    }
 }
+
+/*
+@media only screen and (max-width: 767px){
+    
+}*/
