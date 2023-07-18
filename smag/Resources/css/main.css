@@ -238,7 +238,7 @@ ion-icon[name=restaurant-outline] {
 }
 .plans__prices {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
 }
 .plans__prices__premium, 
@@ -246,12 +246,10 @@ ion-icon[name=restaurant-outline] {
     border-right: 1px solid #aaa7a7;
     padding: 0 80px 0 0;
 }
-.plans__prices__premium__body,
-.plans__prices__vip__body {
-    padding: 30px;
-}
-.plans__prices__starter__body {
-    padding: 40px 30px 49px 30px;
+.plans__prices__premium__body div,
+.plans__prices__vip__body div,
+.plans__prices__starter__body div{
+    margin-top: 20px;
 }
 .plans__prices__premium div a, 
 .plans__prices__vip div a,

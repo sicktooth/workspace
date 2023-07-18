@@ -11,8 +11,7 @@
     #popular-meals {padding: 0 110px;}
     .plans__prices__premium, 
     .plans__prices__vip,
-    .plans__prices__starter {padding: 0 20px;}
-    .plans__prices__starter__body div {margin-top: 10px;}
+    .plans__prices__starter{padding: 0 20px}
     .our-cities__cities {padding: 0 30px;}
     .our-cities__cities__ph img,
     .our-cities__cities__lag img,
@@ -34,11 +33,49 @@
     .header__box__text {
         padding: 70px;
     }
-    .plans__prices__starter__body {margin-bottom: 24px;}
-    .plans__prices__starter__header p {
-        margin-bottom: 0 20px;
+    .center__nav a {
+    margin-left: 10px;
     }
+    .nav__right div {
+    margin-left: 8px;
+    }
+    .plans__prices__starter {
+         padding: 0 0 0 40px;
+    }
+    .plan__prices__starter__header p{
+        margin-bottom: 12.5%;
+    }
+    .header__box__text {padding: 70px;}
+    .header__box__text h1 {padding: 0 100px;}
+    .how-it-works__steps {
+        padding: 0 90px;
+    }
+    .how-it-works__step1 p,
+    .how-it-works__step2 p,
+    .how-it-works__step3 p{
+        padding: 0;}
+    .header__box__text p {padding: 0 150px;}
+    .our-cities__cities {padding: 0 10px;}
+    .our-cities__cities__ph img,
+    .our-cities__cities__lag img,
+    .our-cities__cities__benin img,
+    .our-cities__cities__abuja img {padding: 10; width: 200px}
+    .about-us__feature__2,
+    .about-us__feature__3{
+        padding: 0 50px;
+    }
+    .about-us__feature__1,
+    .about-us__feature__4{
+        padding: 0;
+/*        flex-grow: 1*/
+    }
+    .ig-photos__photos li figure img {
+    width: 60px;
+    height: 60px;
+    margin-right: 18px;
 }
+}
+
 
 /*
 @media only screen and (max-width: 767px){
