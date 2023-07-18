@@ -571,6 +571,4 @@ ion-icon[name=location-outline]{
 .footer__left__socials a ion-icon[name=mail]:hover{color: #c8362e;}
 .footer__nav a:hover,
 .footer__nav a:active,
-.footer__left__socials a:active {
-    color: #6d6d6d;
-}
+.footer__left__socials a:active {color: #6d6d6d;}

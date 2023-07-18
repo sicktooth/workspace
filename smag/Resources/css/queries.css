@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1200px){
+    
     .header__box__text {padding: 100px;}
     .header__box__text h1 {padding: 0 150px;}
     .header__box__text p {margin-top: 50px;padding: 0 200px;}
@@ -30,30 +31,18 @@
 }
 
 @media only screen and (max-width: 1023px){
-    .header__box__text {
-        padding: 70px;
-    }
-    .center__nav a {
-    margin-left: 10px;
-    }
-    .nav__right div {
-    margin-left: 8px;
-    }
-    .plans__prices__starter {
-         padding: 0 0 0 40px;
-    }
-    .plan__prices__starter__header p{
-        margin-bottom: 12.5%;
-    }
+    
+    .header__box__text {padding: 70px;}
+    .center__nav a {margin-left: 10px;}
+    .nav__right div {margin-left: 8px;}
+    .plans__prices__starter {padding: 0 0 0 40px;}
+    .plan__prices__starter__header p{margin-bottom: 12.5%;}
     .header__box__text {padding: 70px;}
     .header__box__text h1 {padding: 0 100px;}
-    .how-it-works__steps {
-        padding: 0 90px;
-    }
+    .how-it-works__steps {padding: 0 90px;}
     .how-it-works__step1 p,
     .how-it-works__step2 p,
-    .how-it-works__step3 p{
-        padding: 0;}
+    .how-it-works__step3 p{padding: 0;}
     .header__box__text p {padding: 0 150px;}
     .our-cities__cities {padding: 0 10px;}
     .our-cities__cities__ph img,
@@ -61,19 +50,10 @@
     .our-cities__cities__benin img,
     .our-cities__cities__abuja img {padding: 10; width: 200px}
     .about-us__feature__2,
-    .about-us__feature__3{
-        padding: 0 50px;
-    }
+    .about-us__feature__3{padding: 0 50px;}
     .about-us__feature__1,
-    .about-us__feature__4{
-        padding: 0;
-/*        flex-grow: 1*/
-    }
-    .ig-photos__photos li figure img {
-    width: 60px;
-    height: 60px;
-    margin-right: 18px;
-}
+    .about-us__feature__4{padding: 0;}
+    .ig-photos__photos li figure img {width: 60px;height: 60px;margin-right: 18px;}
 }
 
 
