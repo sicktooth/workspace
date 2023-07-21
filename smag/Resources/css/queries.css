@@ -148,7 +148,30 @@
         padding-left: 10px;
     }
 }
-/*
+
 @media only screen and (max-width: 481px){
     
-}*/
+    .header__box__text h1 {
+        font-size: 250%;
+        padding: 0 30px;
+    }
+    .how-it-works__steps {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    #popular-meals {
+        padding: 10px ;
+    }
+    .plans__prices__premium, 
+    .plans__prices__vip,
+    .plans__prices__starter {
+        border: 1px solid #aaa7a7;
+        padding: 10px 5px;
+    }
+    .plans__prices__premium__body div:last-of-type,
+    .plans__prices__vip__body div:last-of-type,
+    .plans__prices__starter__body div:last-of-type {
+        margin-bottom: 8px;
+    } 
+}
