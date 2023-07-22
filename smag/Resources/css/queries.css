@@ -59,9 +59,10 @@
 
 
 @media only screen and (max-width: 767px){
-    .header__box__text {padding: 50px;}
-    .header__box__text h1 {padding: 0 10px;font-size: 280%;}
-    .header__box__text p {margin-top: 15px;padding: 0 30px;}
+    .header__box__text {padding: 5px 50px;}
+    .header__box__text h1 {padding: 0 10px;font-size: 180%;}
+    .header__box__text p {margin-top: 1%;padding: 0 5% 1% 5%;}
+    .header__box__btn {margin-top: 3%;font-size: 60%}
     .center__nav,
     .nav__right {
         display: none;
@@ -74,6 +75,9 @@
     div.how-it-works__step2,
     div.how-it-works__step3 {
         padding: 0 0 20px 0;
+    }
+     #popular-meals {
+        padding: 0 50px ;
     }
     .popular-meals__header {
         padding: 0;
@@ -161,7 +165,7 @@
         margin-bottom: 30px;
     }
     #popular-meals {
-        padding: 10px ;
+        padding: 10px 20px ;
     }
     .plans__prices__premium, 
     .plans__prices__vip,
@@ -169,9 +173,34 @@
         border: 1px solid #aaa7a7;
         padding: 10px 5px;
     }
+    .plans__prices__premium__body div:nth-of-type(1),
+    .plans__prices__premium__body div:nth-of-type(2),
+    .plans__prices__vip__body div:nth-of-type(2),
+    .plans__prices__vip__body div:nth-of-type(1),
+    .plans__prices__starter__body div:nth-of-type(2),
+    .plans__prices__starter__body div:nth-of-type(1) {
+        text-align: center;
+    }
+    .plans__prices__premium__body div:nth-of-type(2),
+    .plans__prices__vip__body div:nth-of-type(2),
+    .plans__prices__starter__body div:nth-of-type(2) {
+        margin-bottom: 8px
+    }
     .plans__prices__premium__body div:last-of-type,
     .plans__prices__vip__body div:last-of-type,
     .plans__prices__starter__body div:last-of-type {
         margin-bottom: 8px;
     } 
+    .our-cities__cities__ph img,
+    .our-cities__cities__lag img,
+    .our-cities__cities__benin img,
+    .our-cities__cities__abuja img {
+/*        width: 90%;*/
+        height: 160px;
+    }
+     .ig-photos__photos li figure img {
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+    }
 }
