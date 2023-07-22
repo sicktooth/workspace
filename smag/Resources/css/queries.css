@@ -1,9 +1,8 @@
 @media only screen and (max-width: 1200px){
-    
     .header__box__text {padding: 100px;}
     .header__box__text h1 {padding: 0 150px;}
     .header__box__text p {margin-top: 50px;padding: 0 200px;}
-    .header__box__btn {margin-top: 50px;}
+    .header__box__btn {margin-top: 30px;}
     .how-it-works__steps {padding: 0 180px;}
     .how-it-works__step1 p,
     .how-it-works__step3 p,
@@ -29,7 +28,6 @@
     .about-us__feature__2 {padding: 0 70px;}
     .ig-photos__photos li figure img {width: 90px; height: 90px; transform: scale(1.25);}
 }
-
 @media only screen and (max-width: 1023px){
     
     .header__box__text {padding: 70px;}
@@ -55,152 +53,94 @@
     .about-us__feature__4{padding: 0;}
     .ig-photos__photos li figure img {width: 60px;height: 60px;margin-right: 18px;}
 }
-
-
-
+@media only landscape and (max-width: 767px), (max-height: 480px) {
+    .header__box__text {padding: 8px 10px;}
+    .header__box__text h1 {padding: 10px 10px; font-size: 200%; line-height: 100%}
+    h1::after{margin: 10px 0 0 0;}
+    .header__box__text p {margin-top: 1%;padding: 0 5% 1% 5%;}
+    .header__box__btn {margin-top: 5%;font-size: 60%;}
+    #home__nav {padding: 5px 0 5px 0;}
+}
+@media only screen and (max-width: 400px) {
+    .footer__nav {display: flex;flex-direction: column;}
+    .footer__nav a {margin-bottom: 3%;}
+}
 @media only screen and (max-width: 767px){
     .header__box__text {padding: 5px 50px;}
-    .header__box__text h1 {padding: 0 10px;font-size: 180%;}
+    .header__box__text h1 {padding: 0 10px;}
+    h1::after{margin: 10px 0 0 0;}
     .header__box__text p {margin-top: 1%;padding: 0 5% 1% 5%;}
-    .header__box__btn {margin-top: 3%;font-size: 60%}
+/*    NOTE THIS FOR NAVIGATIOM*/
     .center__nav,
     .nav__right {
         display: none;
     }
-    .how-it-works__header {
-        padding: 10px 0;
-    }
+/*    */
+    .how-it-works__header {padding: 10px 0;}
     .how-it-works__steps {padding: 0 20px;}
     div.how-it-works__step1,
     div.how-it-works__step2,
-    div.how-it-works__step3 {
-        padding: 0 0 20px 0;
-    }
-     #popular-meals {
-        padding: 0 50px ;
-    }
-    .popular-meals__header {
-        padding: 0;
-        margin-top: 8px;
-    }
-    .plans__prices  {
-        flex-direction: column;
-    }
+    div.how-it-works__step3 {padding: 0 0 20px 0;}
+     #popular-meals {padding: 0 50px ;}
+    .popular-meals__header {padding: 0;margin-top: 8px;}
+    .plans__prices  {flex-direction: column;}
     .plans__prices__premium, 
     .plans__prices__vip,
-    .plans__prices__starter {
-        border: 1px solid #aaa7a7;
-        padding: 30px 50px;
-    }
+    .plans__prices__starter {border: 1px solid #aaa7a7;padding: 30px 50px;}
     .plan__prices__premium__header div,
     .plan__prices__vip__header div,
-    .plan__prices__starter__header div {
-        text-align: center;
-    }
+    .plan__prices__starter__header div {text-align: center;}
     .plan__prices__starter__header p{margin-bottom: 0;}
-    .our-cities__cities {
-        flex-direction: column;
-    }
-    .our-cities__header {
-        margin-bottom: 10px;
-        padding: 20px 0;
-    }
+    .our-cities__cities {flex-direction: column;}
+    .our-cities__header {margin-bottom: 10px;padding: 20px 0;}
     .our-cities__cities__ph img,
     .our-cities__cities__lag img,
     .our-cities__cities__benin img,
-    .our-cities__cities__abuja img {
-        width: 100%;
-        height: 300px;
-        margin-bottom: 0;
-    }
-    .testimonials__content {
-        flex-direction: column;
-    }
-    .testimonials__header {
-        padding: 15px 0;}
-    blockquote {
-        padding: 8px 0;
-    }
-    .esp {
-        font-size: 190%;}
+    .our-cities__cities__abuja img {width: 100%;height: 300px;margin-bottom: 0;}
+    .testimonials__content {flex-direction: column;}
+    .testimonials__header {padding: 15px 0;}
+    blockquote {padding: 8px 0;}
+    .esp {font-size: 190%;}
     .sign-up__header p {padding: 10px 0;}
     form {width: 60%;}
-    .about-us__features {
-        display: flex;
-        flex-direction: column;
-/*        padding: 30px;*/
-    }
+    .about-us__features {display: flex;flex-direction: column;}
     .about-us__feature__2,
     .about-us__feature__3,
     .about-us__feature__1,
-    .about-us__feature__4{
-        padding: 30px 0;
-        text-align: center;
-    }
-    .ig-photos__photos li figure img {
-        width: 35px;
-        height: 35px;
-        margin-right: 10px;
-    }
-    footer {
-        font-size: 70%;
-    }
-    .footer__nav a {
-        margin-left: 8px;
-    }
-    .footer__left p {
-        padding-left: 10px;
-    }
+    .about-us__feature__4{padding: 30px 0;text-align: center;}
+    .ig-photos__photos li figure img {width: 35px;height: 35px;margin-right: 10px;}
+    footer {font-size: 70%;}
+    .footer__nav a {margin-left: 8px;}
+    .footer__left p {padding-left: 10px;}
 }
-
 @media only screen and (max-width: 481px){
-    
-    .header__box__text h1 {
-        font-size: 250%;
-        padding: 0 30px;
-    }
-    .how-it-works__steps {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-    #popular-meals {
-        padding: 10px 20px ;
-    }
+    .header__box__text h1 {font-size: 250%;padding: 0 30px;}
+    .how-it-works__steps {display: flex;flex-direction: column;margin-bottom: 30px;}
+    #popular-meals {padding: 10px 20px ;}
     .plans__prices__premium, 
     .plans__prices__vip,
-    .plans__prices__starter {
-        border: 1px solid #aaa7a7;
-        padding: 10px 5px;
-    }
+    .plans__prices__starter {border: 1px solid #aaa7a7;padding: 10px 5px;}
     .plans__prices__premium__body div:nth-of-type(1),
     .plans__prices__premium__body div:nth-of-type(2),
     .plans__prices__vip__body div:nth-of-type(2),
     .plans__prices__vip__body div:nth-of-type(1),
     .plans__prices__starter__body div:nth-of-type(2),
-    .plans__prices__starter__body div:nth-of-type(1) {
-        text-align: center;
-    }
+    .plans__prices__starter__body div:nth-of-type(1) {text-align: center;}
     .plans__prices__premium__body div:nth-of-type(2),
     .plans__prices__vip__body div:nth-of-type(2),
-    .plans__prices__starter__body div:nth-of-type(2) {
-        margin-bottom: 8px
-    }
+    .plans__prices__starter__body div:nth-of-type(2) {margin-bottom: 8px}
     .plans__prices__premium__body div:last-of-type,
     .plans__prices__vip__body div:last-of-type,
-    .plans__prices__starter__body div:last-of-type {
-        margin-bottom: 8px;
-    } 
+    .plans__prices__starter__body div:last-of-type {margin-bottom: 8px;} 
     .our-cities__cities__ph img,
     .our-cities__cities__lag img,
     .our-cities__cities__benin img,
-    .our-cities__cities__abuja img {
-/*        width: 90%;*/
-        height: 160px;
-    }
-     .ig-photos__photos li figure img {
-        width: 25px;
-        height: 25px;
-        margin-right: 8px;
-    }
+    .our-cities__cities__abuja img {width: 90%;height: 160px;}
+    .ig-photos__photos li figure img {width: 25px;height: 25px;margin-right: 8px;}
+    .footer__left {padding:30px 18px 0 10px;}
+    .footer__left hr {margin: 8px;}
+    .footer__nav a {margin-left: 8px;}
+}
+@media only screen and (max-width: 300px) {
+    .ig-photos__photos li figure img {width: 20px;height: 20px;margin-right: 5px;}
 }
