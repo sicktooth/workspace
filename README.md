@@ -4,6 +4,7 @@ This is just my workspace for projects.
 Project the first (my first project) there is named 
 ## Smag, 
 located in the folder Smag which is an imagery food delivery service.
+
  __NoTE THis Is the Company's LanDing PagE__
 
 This is where you can make an order for any Nigerian meal 🍛 and subscribe 
