@@ -53,11 +53,47 @@ h1::after{
     background-color: rgba(255, 255, 255);
     padding: 15px 0 5px 0;
 }
+#home__nav .nav__left .logo-black {display: none;}
+#home__nav .mobile__icon {display: none;}
 .nav__left img {
     height: 70px;
     width: 70px;
 }
-.center__nav,
+                    /********* STICKY  NAV*********/
+.home__nav__sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 3px 5px #dadada;
+    padding: 0;
+}
+.home__nav__sticky .nav__right {margin-top: 20px}
+.home__nav__sticky .center__nav{margin-top: 25px}
+.home__nav__sticky .nav__left .logo-white {display: none;}
+.home__nav__sticky .nav__left .logo-black {display: block;}
+.home__nav__sticky .nav__left{margin: 0;}
+.home__nav__sticky .nav__left img {height: 50px; width: 50px;}
+.home__nav__sticky .mobile__icon {display: none;}
+
+/* */
+                /***********MOBILE NAV*************/
+/*
+.mobile__nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 3px 5px #dadada;
+    padding: 0;
+}
+*/
+
+.mobile__nav .nav__left {padding: 0; margin:0;}
+.mobile__nav .nav__left .logo-white{display: block;}
+.mobile__nav .mobile__icon {font-size: 200%;}
+
+
+
+/**/
 .nav__right div{
     display: inline-block;
 }
