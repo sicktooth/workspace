@@ -47,14 +47,14 @@ h1::after{
     margin-top: 70px;
     padding: 0 250px;
 }
-#home__nav {
+.header nav {
     display: flex;
     justify-content: space-around;
     background-color: rgba(255, 255, 255);
     padding: 15px 0 5px 0;
 }
-#home__nav .nav__left .logo-black {display: none;}
-#home__nav .mobile__icon {display: none;}
+.header nav .nav__left .logo-black {display: none;}
+.header nav .mobile__icon {display: none;}
 .nav__left img {
     height: 70px;
     width: 70px;
