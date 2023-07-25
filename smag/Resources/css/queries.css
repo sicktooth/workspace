@@ -28,7 +28,7 @@
     .about-us__feature__2 {padding: 0 70px;}
     .ig-photos__photos li figure img {width: 90px; height: 90px; transform: scale(1.25);}
 }
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1024px){
     
     .header__box__text {padding: 70px;}
     .center__nav a {margin-left: 10px;}
@@ -92,7 +92,7 @@
     .header nav {justify-content: space-between; padding: 0 10px; align-content: center;}
     .header nav .nav__left {padding: 0; margin:0;}
     .header nav .nav__left .logo-white{display: block;}
-    .header nav .mobile__icon {font-size: 200%; margin-top: 10px;display: block; cursor: pointer;}
+    .header nav ion-icon[name=menu-outline] {font-size: 200%; margin-top: 10px;display: block; cursor: pointer;}
 
 /**/
     header {height: 91.5vh;}

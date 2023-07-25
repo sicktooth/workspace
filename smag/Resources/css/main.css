@@ -54,7 +54,7 @@ h1::after{
     padding: 15px 0 5px 0;
 }
 .header nav .nav__left .logo-black {display: none;}
-.header nav .mobile__icon {display: none;}
+.header nav ion-icon[name=menu-outline] {display: none;}
 .nav__left img {
     height: 70px;
     width: 70px;
