@@ -76,24 +76,7 @@ h1::after{
 .home__nav__sticky .mobile__icon {display: none;}
 
 /* */
-                /***********MOBILE NAV*************/
-/*
-.mobile__nav {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    box-shadow: 0 3px 5px #dadada;
-    padding: 0;
-}
-*/
 
-.mobile__nav .nav__left {padding: 0; margin:0;}
-.mobile__nav .nav__left .logo-white{display: block;}
-.mobile__nav .mobile__icon {font-size: 200%;}
-
-
-
-/**/
 .nav__right div{
     display: inline-block;
 }

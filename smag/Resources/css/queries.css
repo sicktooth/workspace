@@ -66,11 +66,36 @@
     .footer__nav a {margin-bottom: 3%;}
 }
 @media only screen and (max-width: 767px){
+    
+                    /***********MOBILE NAV*************/
     .center__nav,
     .nav__right {
         display: none;
     }
-    #home__nav .mobile__icon {display: block;}
+    .js__mobile__nav{
+        margin-top: 30px;
+        flex-direction: column;
+        display: flex;
+    }
+    .js__mobile__nav a {
+        margin-bottom: 5px;
+    }
+/*
+.mobile__nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 3px 5px #dadada;
+    padding: 0;
+}
+*/
+    .header nav {justify-content: space-between; padding: 0 10px; align-content: center;}
+    .header nav .nav__left {padding: 0; margin:0;}
+    .header nav .nav__left .logo-white{display: block;}
+    .header nav .mobile__icon {font-size: 200%; margin-top: 10px;display: block; cursor: pointer;}
+
+/**/
+    header {height: 91.5vh;}
     .header__box__text {padding: 5px 50px;}
     .header__box__text h1 {padding: 0 10px;}
     h1::after{margin: 10px 0 0 0;}
