@@ -53,8 +53,8 @@ h1::after{
     background-color: rgba(255, 255, 255);
     padding: 15px 0 5px 0;
 }
-.header nav .nav__left .logo-black {display: none;}
 .header nav ion-icon[name=menu-outline] {display: none;}
+.head__icon {display: none;}
 .nav__left img {
     height: 70px;
     width: 70px;
@@ -67,14 +67,10 @@ h1::after{
     box-shadow: 0 3px 5px #dadada;
     padding: 0;
 }
-.home__nav__sticky .nav__right {margin-top: 20px}
-.home__nav__sticky .center__nav{margin-top: 25px}
-.home__nav__sticky .nav__left .logo-white {display: none;}
-.home__nav__sticky .nav__left .logo-black {display: block;}
+.home__nav__sticky .nav__right {margin-top: 20px;}
+.home__nav__sticky .center__nav {margin-top: 25px;}
 .home__nav__sticky .nav__left{margin: 0;}
 .home__nav__sticky .nav__left img {height: 50px; width: 50px;}
-.home__nav__sticky .mobile__icon {display: none;}
-
 /* */
 
 .nav__right div{

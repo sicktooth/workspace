@@ -80,19 +80,11 @@
     .js__mobile__nav a {
         margin-bottom: 5px;
     }
-/*
-.mobile__nav {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    box-shadow: 0 3px 5px #dadada;
-    padding: 0;
-}
-*/
     .header nav {justify-content: space-between; padding: 0 10px; align-content: center;}
     .header nav .nav__left {padding: 0; margin:0;}
     .header nav .nav__left .logo-white{display: block;}
     .header nav ion-icon[name=menu-outline] {font-size: 200%; margin-top: 10px;display: block; cursor: pointer;}
+    .head__icon {display: block;}
 
 /**/
     header {height: 91.5vh;}
