@@ -26,7 +26,7 @@
     .sign-up__header p {padding: 10px 200px;}
     input[type=submit] {margin-top: 15px}
     .about-us__feature__2 {padding: 0 70px;}
-    .ig-photos__photos li figure img {width: 90px; height: 90px; transform: scale(1.25);}
+    .ig-photos__photos li figure img {width: 90px; height: 90px; -webkit-transform: scale(1.25); transform: scale(1.25);}
 }
 @media only screen and (max-width: 1024px){
     
@@ -62,7 +62,7 @@
     #home__nav {padding: 5px 0 5px 0;}
 }
 @media only screen and (max-width: 400px) {
-    .footer__nav {display: flex;flex-direction: column;}
+    .footer__nav {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     .footer__nav a {margin-bottom: 3%;}
 }
 @media only screen and (max-width: 767px){
@@ -74,13 +74,18 @@
     }
     .js__mobile__nav{
         margin-top: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .js__mobile__nav a {
         margin-bottom: 5px;
     }
-    .header nav {justify-content: space-between; padding: 0 10px; align-content: center;}
+    .header nav {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between; padding: 0 10px; -ms-flex-line-pack: center; align-content: center;}
     .header nav .nav__left {padding: 0; margin:0;}
     .header nav .nav__left .logo-white{display: block;}
     .header nav ion-icon[name=menu-outline] {font-size: 200%; margin-top: 10px;display: block; cursor: pointer;}
@@ -99,7 +104,7 @@
     div.how-it-works__step3 {padding: 0 0 20px 0;}
     #popular-meals {padding: 0 50px ;}
     .popular-meals__header {padding: 0;margin-top: 8px;}
-    .plans__prices  {flex-direction: column;}
+    .plans__prices  {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     .plans__prices__premium, 
     .plans__prices__vip,
     .plans__prices__starter {border: 1px solid #aaa7a7;padding: 30px 50px;}
@@ -107,19 +112,19 @@
     .plan__prices__vip__header div,
     .plan__prices__starter__header div {text-align: center;}
     .plan__prices__starter__header p{margin-bottom: 0;}
-    .our-cities__cities {flex-direction: column;}
+    .our-cities__cities {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     .our-cities__header {margin-bottom: 10px;padding: 20px 0;}
     .our-cities__cities__ph img,
     .our-cities__cities__lag img,
     .our-cities__cities__benin img,
     .our-cities__cities__abuja img {width: 100%;height: 300px;margin-bottom: 0;}
-    .testimonials__content {flex-direction: column;}
+    .testimonials__content {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     .testimonials__header {padding: 15px 0;}
     blockquote {padding: 8px 0;}
     .esp {font-size: 190%;}
     .sign-up__header p {padding: 10px 0;}
     form {width: 60%;}
-    .about-us__features {display: flex;flex-direction: column;}
+    .about-us__features {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
     .about-us__feature__2,
     .about-us__feature__3,
     .about-us__feature__1,
@@ -131,7 +136,7 @@
 }
 @media only screen and (max-width: 481px){
     .header__box__text h1 {font-size: 250%;padding: 0 30px;}
-    .how-it-works__steps {display: flex;flex-direction: column;margin-bottom: 30px;}
+    .how-it-works__steps {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;margin-bottom: 30px;}
     #popular-meals {padding: 10px 20px ;}
     .plans__prices__premium, 
     .plans__prices__vip,

@@ -1,4 +1,5 @@
 *{
+-webkit-box-sizing:border-box;
 box-sizing:border-box;
 padding:0;
 margin:0;
@@ -14,6 +15,7 @@ html {
    overflow-x: hidden;
 }
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.38)), to(rgba(0 , 0, 0, 0.38))), url(img/hero.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0 , 0, 0, 0.38)), url(img/hero.webp);
     background-size: cover;
     height: 90vh;
@@ -22,8 +24,13 @@ header {
 }
 .header__box {
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 .header__box__text {
@@ -48,7 +55,10 @@ h1::after{
     padding: 0 250px;
 }
 .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     background-color: rgba(255, 255, 255);
     padding: 15px 0 5px 0;
@@ -64,6 +74,7 @@ h1::after{
     position: fixed;
     width: 100%;
     z-index: 1;
+    -webkit-box-shadow: 0 3px 5px #dadada;
     box-shadow: 0 3px 5px #dadada;
     padding: 0;
 }
@@ -86,6 +97,7 @@ h1::after{
     text-decoration: none;
     color: #000;
     font-size: 95%;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
 }
 .center__nav a:hover {
@@ -113,6 +125,7 @@ h1::after{
 input[type=submit] {
     border: 2px solid #c8362e;
     color: #fff;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     border-radius: 20px;
     padding: 10px;
@@ -127,6 +140,7 @@ input[type=submit] {
 .btn-ghost:link,
 .btn-ghost:visited {
     color: #000000;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
 }
 .btn-ghost:hover {
@@ -148,6 +162,7 @@ input[type=submit] {
     border: 2px solid #c8362e;
     text-decoration: none;
     color: #fff;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     border-radius: 20px;
     font-size: 130%;
@@ -175,7 +190,11 @@ h2 {
     text-align: center;
 }
 .how-it-works__steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0 250px;
 }
@@ -219,18 +238,23 @@ ion-icon[name=restaurant-outline] {
     width: 100%;
     height: auto;
     display: block;
+    -webkit-transform: scale(1.19);
     transform: scale(1.19);
     opacity: 0.65;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .popular-meals__meals-1 li figure img:hover,
 .popular-meals__meals li figure img:hover {
     opacity: 1;
+    -webkit-transform: scale(1.35);
     transform: scale(1.35);
 }
 .popular-meals__meals,
 .popular-meals__meals-1{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .popular-meals__meals li,
@@ -241,6 +265,7 @@ ion-icon[name=restaurant-outline] {
 
 #plans {
     padding-bottom: 30px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0 , 0, 0, 0.3))), url(img/back-plans.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0 , 0, 0, 0.3)), url(img/back-plans.webp);
     background-size: cover;
     background-attachment: fixed;
@@ -252,8 +277,12 @@ ion-icon[name=restaurant-outline] {
     text-align: center;
 }
 .plans__prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 .plans__prices__premium, 
@@ -286,13 +315,20 @@ ion-icon[name=restaurant-outline] {
     font-size: 18px;
     font-weight: 300;
     font-style: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 
 .our-cities__cities {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 0 0 20px 0;
 }
@@ -340,6 +376,7 @@ ion-icon[name=people-outline] {
 .our-cities__cities__abuja__text div a:visited {
     text-decoration: underline;
     color: #000;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
 }
 .our-cities__cities__ph__text div a:hover, 
@@ -355,6 +392,7 @@ ion-icon[name=people-outline] {
 
 
 #testimonials {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0 , 0, 0, 0.3))), url(img/back-customers.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0 , 0, 0, 0.3)), url(img/back-customers.webp);
     background-size: cover;
     background-attachment: fixed;
@@ -362,6 +400,8 @@ ion-icon[name=people-outline] {
     color: #fff;
 }
 .testimonials__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .testimonials__header {
@@ -378,7 +418,10 @@ blockquote img {
     margin-right: 10px;
 }
 blockquote div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-line-pack: center;
     align-content: center;
     padding: 10px;
 }
@@ -394,6 +437,7 @@ blockquote div p {
 
 
 #sign-up {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0 , 0, 0, 0.3))), url(img/back-customers.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0 , 0, 0, 0.3)), url(img/back-customers.webp);
     background-size: cover;
     background-attachment: fixed;
@@ -415,8 +459,13 @@ blockquote div p {
     padding: 10px 400px;
 }
 .sign-up__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     font-family: serif;
 }
@@ -425,6 +474,14 @@ form {
 }
 form div {
     margin-bottom: 5px;
+}
+::-webkit-input-placeholder {
+    padding:0 0 0 3px;
+    color: #000;
+}
+:-ms-input-placeholder {
+    padding:0 0 0 3px;
+    color: #000;
 }
 ::placeholder {
     padding:0 0 0 3px;
@@ -469,7 +526,12 @@ input[type=submit]:active {
     margin: 20px 0 0 0;
 }
 .about-us__features {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     padding: 30px;
 }
@@ -487,7 +549,12 @@ input[type=submit]:active {
 .about-us__features__header2,
 .about-us__features__header3,
 .about-us__features__header4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
 }
@@ -501,13 +568,18 @@ input[type=submit]:active {
     padding: 0 0 8px 0;
 }
 .ig-photos__header {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(45%, rgb(200, 54, 46)), color-stop(rgb(254, 218, 117)), color-stop(rgb(250, 126, 30)), to(rgb(150, 49, 191)));
     background-image: linear-gradient(to right, rgb(200, 54, 46) 45%, rgb(254, 218, 117), rgb(250, 126, 30), rgb(150, 49, 191));
     background-size: cover;
     margin-bottom: 10px;
     text-align: center;
 }
 .ig-photos__photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     list-style: none;
     overflow: hidden;
@@ -515,6 +587,7 @@ input[type=submit]:active {
 .ig-photos__photos li figure img {
     width: 150px;
     height: 140px;
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
     margin-right: 10px;
 }
@@ -525,7 +598,11 @@ li:first-of-type {
 
 footer {
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 /*    height: 35vh;*/
     padding: 0;
@@ -534,6 +611,7 @@ footer {
 .footer__right {
     width: 50vw;
 /*    height: 100%;*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0.26))), url(img/footer-right.webp);
     background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)), url(img/footer-right.webp);
     background-size: cover;
     background-position: center;
@@ -541,8 +619,15 @@ footer {
 }
 .footer__left {
     width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     background-image: url(img/footer-left.webp);
     padding:30px 18px 0 0;
@@ -568,6 +653,7 @@ ion-icon[name=location-outline]{
 .footer__nav a:visited {
     text-decoration: none;
     color: inherit;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
 }
 .footer__left__socials a:link,
@@ -575,6 +661,7 @@ ion-icon[name=location-outline]{
     color: #fff;
     font-size: 120%;
     text-decoration: none;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
 }
 .footer__left__socials ion-icon{
