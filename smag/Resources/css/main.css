@@ -35,6 +35,7 @@ header {
 }
 .header__box__text {
     padding: 140px;
+    text-align: center;
 }
 .header__box__text h1 {
     font-size: 300%;
@@ -48,7 +49,7 @@ h1::after{
     height: 3px;
     background-color:  #c8362e;
     display: block;
-    margin: 20px 0 0 0;
+    margin: 20px auto 0 auto;
 }
 .header__box__text p {
     margin-top: 70px;
@@ -321,6 +322,11 @@ ion-icon[name=restaurant-outline] {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+.plans__prices__premium__body div:nth-of-type(3),
+.plans__prices__vip__body div:nth-of-type(3),
+.plans__prices__starter__body div:nth-of-type(3) {
+    text-align: center;
 }
 
 
