@@ -452,6 +452,7 @@ blockquote div p {
 }
 .sign-up__header {
     padding: 30px;
+    text-align: center;
 }
 .sign-up__header h2::after {
     content: "";
@@ -459,7 +460,7 @@ blockquote div p {
     height: 2px;
     background-color:  #c8362e;
     display: block;
-    margin: 20px 0 0 0;
+    margin: 20px auto 0 auto;
 }
 .sign-up__header p {
     padding: 10px 400px;
@@ -474,6 +475,9 @@ blockquote div p {
     -ms-flex-line-pack: center;
     align-content: center;
     font-family: serif;
+}
+form div:nth-of-type(4) {
+    text-align: center;
 }
 form {
     width: 30%;
@@ -522,6 +526,7 @@ input[type=submit]:active {
 
 .about-us__header {
     padding: 30px;
+    text-align: center;
 }
 .about-us__header h2::after {
     content: "";
@@ -529,7 +534,7 @@ input[type=submit]:active {
     height: 3px;
     background-color:  #c8362e;
     display: block;
-    margin: 20px 0 0 0;
+    margin: 20px auto 0 auto;
 }
 .about-us__features {
     display: -webkit-box;
@@ -683,3 +688,4 @@ ion-icon[name=location-outline]{
 .footer__nav a:hover,
 .footer__nav a:active,
 .footer__left__socials a:active {color: #6d6d6d;}
+.footer__left hr {width: 55%; margin: 5px 0;}
