@@ -46,14 +46,14 @@
     .our-cities__cities__ph img,
     .our-cities__cities__lag img,
     .our-cities__cities__benin img,
-    .our-cities__cities__abuja img {padding: 10; width: 200px}
+    .our-cities__cities__abuja img {padding: 10px; width: 200px}
     .about-us__feature__2,
     .about-us__feature__3{padding: 0 50px;}
     .about-us__feature__1,
     .about-us__feature__4{padding: 0;}
     .ig-photos__photos li figure img {width: 60px;height: 60px;margin-right: 18px;}
 }
-@media only landscape and (max-width: 767px), (max-height: 480px) {
+@media only screen and (max-width: 767px), (max-height: 480px) {
     .header__box__text {padding: 8px 10px;}
     .header__box__text h1 {padding: 10px 10px; font-size: 200%; line-height: 100%}
     h1::after{margin: 10px auto 0 auto;}
