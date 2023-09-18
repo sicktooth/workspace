@@ -78,6 +78,7 @@ nav a:active {
 }
 .expertise__header img {
     margin: 20px 0;
+/*    width: 10%;*/
 }
 .expertise__head__img:before {
     content: "";
